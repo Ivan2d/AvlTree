@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib>
 #include <sstream>
-#include "AVL.cpp"
+#include "BST.cpp"
 using namespace std;
 
 struct wordNode
@@ -37,7 +37,7 @@ string trim(string input)
 int main()
 {
 	int total = 0;
-	Tree<wordNode, string> tree;
+	BST<wordNode, string> tree;
 	ifstream fin;
 	fin.open("article.txt");
 	if (fin.fail()) 
@@ -72,3 +72,4 @@ int main()
 	cout << "Total number of words: " << total << endl;
 	return 0;
 }
+
